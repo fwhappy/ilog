@@ -1,0 +1,29 @@
+# 是否输出到控制台 true|false
+adapter_console=true
+# 输出到命令行的日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug
+console_level = 8
+# 日志保留路径
+file="/data/ilog/main.log"
+# 文件日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug
+file_level=8
+# 是否输出行号和文件名 true|false
+enable_func_call_depth=true
+# 是否异步输出,提升性能 true|false
+async=true
+# 异步channel大小
+chan_length=10000
+# 是否开启日志rotate true|false
+rotate=true
+# 是否按照每天rotate true|false
+daily=false
+# 单个文件行数限制
+maxlines=0
+# 单个文件大小限制
+maxsize=102400000
+# 文件最多保留天数
+maxdays = 1
+# 是否分文件存储日志 true|false
+multifile=true
+# 分文件存储的日志类型
+separate=["info", "warning", "error", "critical"]
+
