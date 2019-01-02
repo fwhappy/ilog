@@ -1,10 +1,10 @@
 # 是否输出到控制台 true|false
 adapter_console=true
-# 输出到命令行的日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug
+# 输出到命令行的日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug;8:trace
 console_level = 8
 # 日志保留路径
 file="/data/ilog/main.log"
-# 文件日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug
+# 文件日志级别 2:critical;3:error;4:warning;5:notice;6:info;7:debug;8:trace
 file_level=8
 # 是否输出行号和文件名 true|false
 enable_func_call_depth=true

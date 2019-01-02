@@ -5,7 +5,6 @@ import (
 	"io/ioutil"
 
 	"github.com/BurntSushi/toml"
-	"github.com/astaxie/beego/logs"
 )
 
 // LogConfig 日志配置
@@ -66,7 +65,7 @@ func CreateLogger(cfgFile string) *BeeLogger {
 	if cfg.Multifile {
 		fileConfig["separate"] = cfg.Separate
 		byt, _ := json.Marshal(fileConfig)
-		log.SetLogger(logs.AdapterMultiFile, string(byt))
+		log.SetLogger(AdapterMultiFile, string(byt))
 	} else {
 		byt, _ := json.Marshal(fileConfig)
 		log.SetLogger(AdapterFile, string(byt))

@@ -181,8 +181,6 @@ func (bl *BeeLogger) Async(msgLen ...int64) *BeeLogger {
 // config need to be correct JSON as string: {"interval":360}.
 func (bl *BeeLogger) setLogger(adapterName string, configs ...string) error {
 	config := append(configs, "{}")[0]
-	fmt.Printf("%#v\n", configs)
-	fmt.Printf("%#v\n", config)
 	for _, l := range bl.outputs {
 		if l.name == adapterName {
 			return fmt.Errorf("logs: duplicate adaptername %q (you have set this logger before)", adapterName)
